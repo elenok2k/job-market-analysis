@@ -2,21 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# -----------------------
-# PAGE TITLE
-# -----------------------
-
 st.title("Job Market Analysis Dashboard")
 
-# -----------------------
-# LOAD DATA
-# -----------------------
-
 df = pd.read_csv("data/data_jobs.csv")
-
-# -----------------------
-# DATA CLEANING
-# -----------------------
 
 df = df.drop("Unnamed: 0", axis=1)
 
@@ -67,10 +55,6 @@ df["company_clean"] = (
     .str[0]
 )
 
-# -----------------------
-# SIDEBAR FILTER
-# -----------------------
-
 industries = sorted(
     df["Industry"]
     .dropna()
@@ -82,17 +66,9 @@ selected_industry = st.sidebar.selectbox(
     industries
 )
 
-# -----------------------
-# FILTER DATA
-# -----------------------
-
 filtered_df = df[
     df["Industry"] == selected_industry
 ]
-
-# -----------------------
-# KPI METRICS
-# -----------------------
 
 avg_salary = round(
     filtered_df["avg_salary"].mean(),
@@ -123,17 +99,9 @@ col3.metric(
     companies_count
 )
 
-# -----------------------
-# DATA PREVIEW
-# -----------------------
-
 st.subheader("Dataset Preview")
 
 st.dataframe(filtered_df.head())
-
-# -----------------------
-# TOP COMPANIES CHART
-# -----------------------
 
 st.subheader(
     f"Top Companies in {selected_industry}"
@@ -156,10 +124,6 @@ plt.tight_layout()
 
 st.pyplot(fig)
 
-# -----------------------
-# SALARY DISTRIBUTION
-# -----------------------
-
 st.subheader("Salary Distribution")
 
 fig, ax = plt.subplots(figsize=(10, 5))
@@ -176,10 +140,6 @@ plt.ylabel("Count")
 plt.tight_layout()
 
 st.pyplot(fig)
-
-# -----------------------
-# TOP PAYING COMPANIES
-# -----------------------
 
 st.subheader("Top Paying Companies")
 
