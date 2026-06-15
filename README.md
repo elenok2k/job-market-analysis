@@ -20,7 +20,7 @@ The dashboard allows users to:
 
 - Python
 - Pandas
-- SQL (SQLite)
+- SQL(SQLite)
 - Matplotlib
 - Streamlit
 
@@ -108,4 +108,4 @@ streamlit run app.py
 
 ---
 
-## Updated 06.06.2026
+## Updated 15.06.2026
