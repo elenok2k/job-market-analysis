@@ -1,49 +1,49 @@
-# Job Market Analysis Dashboard
+# Дашборд для анализа рынка труда
 
-Interactive dashboard for analyzing the data analyst job market using Python, SQL, and Streamlit.
-
----
-
-## Project Overview
-
-This project analyzes job market data for data-related positions.
-
-The dashboard allows users to:
-- filter jobs by industry,
-- explore salary distributions,
-- analyze top companies,
-- view key metrics.
+Интерактивный дашборд для анализа рынка вакансий аналитиков данных с использованием Python, SQL и Streamlit.
 
 ---
 
-## Technologies Used
+## Обзор проекта
+
+Этот проект посвящён анализу рынка труда в сфере анализа данных.
+
+Дашборд позволяет пользователям:
+- фильтровать вакансии по отрасли,
+- исследовать распределение заработных плат,
+- анализировать ведущие компании,
+- просматривать ключевые показатели (KPI).
+
+---
+
+## Используемые технологии
 
 - Python
 - Pandas
-- SQL(SQLite)
+- SQL (SQLite)
 - Matplotlib
 - Streamlit
 
 ---
 
-## Features
+## Основные возможности
 
-- Data cleaning and preprocessing
-- Salary analysis
-- Industry filtering
-- KPI metrics
-- Interactive charts
-- Top companies analysis
-
----
-
-## Dashboard Preview
-
-![Dashboard Screenshot](images/dashboard.png)
+- Очистка и предварительная обработка данных
+- Анализ заработных плат
+- Фильтрация по отраслям
+- Отображение ключевых показателей (KPI)
+- Интерактивные графики
+- Анализ ведущих компаний
 
 ---
 
-## Project Structure
+## Предварительный просмотр дашборда
+
+![Скриншот дашборда](images/dashboard.png)
+
+---
+
+## Структура проекта
 
 ```bash
 job-market-analysis/
@@ -69,21 +69,21 @@ job-market-analysis/
 
 ---
 
-## Installation
+## Установка
 
-Clone repository:
+Клонируйте репозиторий:
 
 ```bash
-git clone <your-repo-link>
+git clone <ссылка-на-репозиторий>
 ```
 
-Install dependencies:
+Установите зависимости:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run dashboard:
+Запустите дашборд:
 
 ```bash
 streamlit run app.py
@@ -91,21 +91,20 @@ streamlit run app.py
 
 ---
 
-## Key Insights
+## Основные выводы
 
-- Healthcare and pharmaceutical industries show some of the highest salaries.
-- Salary distribution is concentrated in mid-to-high salary ranges.
-- Several large tech companies consistently offer top compensation.
-
----
-
-## Future Improvements
-
-- Deploy dashboard online
-- Add more visualizations
-- Connect real-time APIs
-- Add machine learning salary prediction
+- В сферах здравоохранения и фармацевтики наблюдаются одни из самых высоких уровней заработной платы.
+- Большинство вакансий сосредоточено в среднем и высоком диапазонах зарплат.
+- Крупные технологические компании стабильно предлагают наиболее конкурентоспособную оплату труда.
 
 ---
 
-## Updated 30.06.2026
+## Планы по развитию
+
+- Развернуть дашборд в интернете
+- Добавить больше визуализаций
+- Подключить API для получения данных в режиме реального времени
+- Реализовать прогнозирование заработной платы с помощью методов машинного обучения
+
+---
+
