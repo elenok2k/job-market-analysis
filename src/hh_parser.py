@@ -17,8 +17,3 @@ response = requests.get(
     headers=headers
 )
 
-print("STATUS CODE:")
-print(response.status_code)
-
-print("\nTEXT:")
-print(response.text)
