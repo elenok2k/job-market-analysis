@@ -16,4 +16,3 @@ response = requests.get(
     params=params,
     headers=headers
 )
-
