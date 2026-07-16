@@ -56,8 +56,6 @@ job-market-analysis/
 │   ├── analysis.ipynb
 │   └── sql_analysis.ipynb
 │
-├── src/
-│   └── hh_parser.py
 │
 ├── images/
 │   └── dashboard.png
